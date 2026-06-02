@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
           mainEntity: [
             { "@type": "Question", name: "Who is RRP Realty in Ibrahimpatnam?", acceptedAnswer: { "@type": "Answer", text: "RRP Realty is an independent Hyderabad real estate firm dealing in plots across the Janaharsha venture, Ibrahimpatnam. We have sold 4,00,000+ sq yards in this corridor since 2016." } },
             { "@type": "Question", name: "Where is the Janaharsha venture located?", acceptedAnswer: { "@type": "Answer", text: "The Janaharsha venture is a plotted development across multiple phases in and around Ibrahimpatnam, Hyderabad — covering villages like Mangalpally, Yacharam, Kandukur, Tukkuguda and Maheshwaram, with direct ORR connectivity." } },
-            { "@type": "Question", name: "Do you help resell plots in Ibrahimpatnam?", acceptedAnswer: { "@type": "Answer", text: "Yes. RRP Realty runs an active resale desk that lists and resells previously owned plots in the Janaharsha venture and across Ibrahimpatnam at fair, current market rates." } },
+            { "@type": "Question", name: "Do you help resell plots in Ibrahimpatnam?", acceptedAnswer: { "@type": "Answer", text: "Yes. RRP Realty handles active resale of previously owned plots in the Janaharsha venture and across Ibrahimpatnam at fair, current market rates." } },
             { "@type": "Question", name: "How many phases does Janaharsha have?", acceptedAnswer: { "@type": "Answer", text: "There are 13+ Janaharsha layout phases across the Ibrahimpatnam corridor, with wide internal roads, residential zoning and full documentation." } },
           ],
         }),
@@ -67,7 +67,7 @@ function Home() {
               Buy or Resell Plots in <span className="text-gold">Janaharsha Venture</span>, Ibrahimpatnam
             </h1>
             <p className="mt-6 text-lg text-white/80 max-w-xl leading-relaxed">
-              <span className="text-gold font-medium">RRP Realty</span> is an independent real estate firm dealing in plots across the Janaharsha venture in Ibrahimpatnam. We've sold <span className="text-gold font-semibold">{SITE.sqYardsSold} sq yards</span> in this corridor since {SITE.since} — and we run an active resale desk to help existing owners exit too.
+              <span className="text-gold font-medium">RRP Realty</span> is an independent real estate firm dealing in plots across the Janaharsha venture in Ibrahimpatnam. We've sold <span className="text-gold font-semibold">{SITE.sqYardsSold} sq yards</span> in this corridor since {SITE.since} — and we handle active resale to help existing owners exit too.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/site-visit-booking" className="btn-gold btn-gold-hover">Book Site Visit <ArrowRight className="h-4 w-4" /></Link>
@@ -189,7 +189,7 @@ function Home() {
         </div>
       </Section>
 
-      <Section eyebrow="Sell & Resell" title="We Sell New Plots — And Help You Resell Existing Ones" subtitle="RRP Realty runs an active resale desk for plots across the Janaharsha venture and the wider Ibrahimpatnam corridor.">
+      <Section eyebrow="Sell & Resell" title="We Sell New Plots — And Help You Resell Existing Ones" subtitle="RRP Realty handles active resale for plots across the Janaharsha venture and the wider Ibrahimpatnam corridor.">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white border border-border rounded-2xl p-7">
             <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Buyers</span>
@@ -200,7 +200,7 @@ function Home() {
           <div className="bg-navy text-white rounded-2xl p-7 border border-gold/40">
             <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Sellers</span>
             <h3 className="font-display font-semibold text-2xl mt-2">Resell your existing plot</h3>
-            <p className="text-white/80 mt-3 leading-relaxed">Already own a plot in Janaharsha or anywhere in Ibrahimpatnam? Our resale desk handles fair, current-market valuation, buyer matching and clean, fast settlement.</p>
+            <p className="text-white/80 mt-3 leading-relaxed">Already own a plot in Janaharsha or anywhere in Ibrahimpatnam? We handle resale with fair, current-market valuation, buyer matching and clean, fast settlement.</p>
             <Link to="/sell-your-plot-ibrahimpatnam" className="mt-5 inline-flex items-center gap-2 btn-gold btn-gold-hover">Get a Resale Quote <ArrowRight className="h-4 w-4" /></Link>
           </div>
         </div>
