@@ -8,9 +8,9 @@ export const Route = createFileRoute("/investment-plots-hyderabad")({
       { name: "description", content: "Investment plots in Hyderabad's high-growth Ibrahimpatnam corridor. Janaharsha Dream City. Call 9010341194." },
       { property: "og:title", content: "Investment Plots Hyderabad — Janaharsha" },
       { property: "og:description", content: "High-appreciation investment plots in Hyderabad." },
-      { property: "og:url", content: "/investment-plots-hyderabad" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/investment-plots-hyderabad" },
     ],
-    links: [{ rel: "canonical", href: "/investment-plots-hyderabad" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/investment-plots-hyderabad" }],
   }),
   component: () => (
     <LandingTemplate

@@ -8,9 +8,9 @@ export const Route = createFileRoute("/sell-your-plot-ibrahimpatnam")({
       { name: "description", content: "We don't just sell — we also buy back previously sold plots in Ibrahimpatnam, Hyderabad. Fair valuation, fast settlement. Call 9010341194." },
       { property: "og:title", content: "Sell Your Plot — Janaharsha Buys Resale Plots" },
       { property: "og:description", content: "Janaharsha Plots buys previously sold plots in Ibrahimpatnam. Transparent valuation, quick payout." },
-      { property: "og:url", content: "/sell-your-plot-ibrahimpatnam" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/sell-your-plot-ibrahimpatnam" },
     ],
-    links: [{ rel: "canonical", href: "/sell-your-plot-ibrahimpatnam" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/sell-your-plot-ibrahimpatnam" }],
   }),
   component: () => (
     <LandingTemplate

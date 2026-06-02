@@ -8,9 +8,9 @@ export const Route = createFileRoute("/janaharsha-dream-city")({
       { name: "description", content: "Janaharsha Dream City — one of Hyderabad's largest plotted developments in Ibrahimpatnam. 13+ phases. Call 9010341194." },
       { property: "og:title", content: "Janaharsha Dream City — Plotted Township" },
       { property: "og:description", content: "Master-planned plotted township across Ibrahimpatnam." },
-      { property: "og:url", content: "/janaharsha-dream-city" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/janaharsha-dream-city" },
     ],
-    links: [{ rel: "canonical", href: "/janaharsha-dream-city" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/janaharsha-dream-city" }],
   }),
   component: () => (
     <LandingTemplate
