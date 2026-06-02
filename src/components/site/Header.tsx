@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { NAV_LINKS, SITE } from "@/lib/site";
+import { Logo } from "@/components/site/Logo";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -14,8 +15,8 @@ export function Header() {
         </div>
       </div>
       <div className="container-luxe flex items-center justify-between h-16">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-gold text-gold-foreground font-bold font-display">J</span>
+        <Link to="/" className="flex items-center gap-3">
+          <Logo variant="light" className="h-10 w-auto" />
           <span className="font-display font-semibold tracking-tight text-lg leading-tight flex flex-col">
             <span>Janaharsha <span className="text-gold">Plots</span></span>
             <span className="text-[10px] font-normal text-white/60 tracking-wider uppercase">By RRP Realty</span>

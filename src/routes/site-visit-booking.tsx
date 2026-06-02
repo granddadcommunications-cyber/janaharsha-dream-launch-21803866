@@ -10,7 +10,7 @@ export const Route = createFileRoute("/site-visit-booking")({
   head: () => ({
     meta: [
       { title: "Book a Site Visit — Janaharsha Plots Ibrahimpatnam" },
-      { name: "description", content: "Schedule a guided site visit to Janaharsha Dream City layouts in Ibrahimpatnam. Free cab pickup. Call 9010341194." },
+      { name: "description", content: "Schedule a guided site visit to Janaharsha Dream City layouts in Ibrahimpatnam. Personalized walkthrough by RRP Realty. Call 9010341194." },
       { property: "og:title", content: "Book Site Visit — Janaharsha Plots" },
       { property: "og:description", content: "Free guided site visit to Janaharsha layouts." },
       { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/site-visit-booking" },
@@ -35,7 +35,7 @@ function SiteVisit() {
               {[
                 { Icon: Calendar, t: "Flexible Slots", d: "Weekdays & weekends available." },
                 { Icon: Clock, t: "60–90 minutes", d: "Walk-through of selected phases." },
-                { Icon: MapPin, t: "Cab Pickup", d: "Optional pickup from your location." },
+                { Icon: MapPin, t: "On-Site Guidance", d: "Meet our team directly at the layout." },
               ].map(({ Icon, t, d }) => (
                 <div key={t} className="bg-secondary rounded-xl p-5 border border-border">
                   <Icon className="h-6 w-6 text-gold" />

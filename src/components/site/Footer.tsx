@@ -1,14 +1,15 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, MapPin, Mail } from "lucide-react";
 import { SITE } from "@/lib/site";
+import { Logo } from "@/components/site/Logo";
 
 export function Footer() {
   return (
     <footer className="bg-navy text-navy-foreground">
       <div className="container-luxe py-16 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-md bg-gold text-gold-foreground font-bold font-display">J</span>
+          <div className="flex items-center gap-3 mb-4">
+            <Logo variant="light" className="h-12 w-auto" />
             <span className="font-display font-semibold text-xl">Janaharsha <span className="text-gold">Plots</span></span>
           </div>
           <p className="text-white/70 text-sm max-w-md leading-relaxed">
