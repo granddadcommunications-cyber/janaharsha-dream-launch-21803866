@@ -96,6 +96,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "Janaharsha Plots in Ibrahimpatnam — Buy & Resell | RRP Realty" },
       { name: "twitter:description", content: "Independent plot dealer for the Janaharsha venture in Ibrahimpatnam. 4,00,000+ sq yards sold since 2016." },
       { name: "theme-color", content: "#0F172A" },
+      { name: "google-site-verification", content: "4VTU7dTCcAk02PAyeZ8gmVz_Em6JXQPXYDESkLm7_TU" },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/c1f612e8-39c0-4ac8-8c24-6294b13802c2" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/c1f612e8-39c0-4ac8-8c24-6294b13802c2" },
     ],
