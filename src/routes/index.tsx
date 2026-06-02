@@ -163,6 +163,25 @@ function Home() {
         </div>
       </Section>
 
+      <Section eyebrow="Buy & Sell" title="We Don't Just Sell Plots — We Buy Them Back Too" subtitle="Janaharsha Plots, operated by RRP Realty, runs an active resale and buyback desk for plot owners across the Ibrahimpatnam corridor.">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white border border-border rounded-2xl p-7">
+            <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Buyers</span>
+            <h3 className="font-display font-semibold text-2xl text-navy mt-2">Buy a new plot</h3>
+            <p className="text-muted-foreground mt-3 leading-relaxed">Choose from 13+ master-planned Janaharsha Dream City phases across Ibrahimpatnam — wide roads, residential zoning and transparent documentation.</p>
+            <Link to="/layout-downloads" className="mt-5 inline-flex items-center gap-2 btn-gold btn-gold-hover">Browse Layouts <ArrowRight className="h-4 w-4" /></Link>
+          </div>
+          <div className="bg-navy text-white rounded-2xl p-7 border border-gold/40">
+            <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Sellers</span>
+            <h3 className="font-display font-semibold text-2xl mt-2">Sell or resell your plot</h3>
+            <p className="text-white/80 mt-3 leading-relaxed">Already own a plot — from us or elsewhere in Ibrahimpatnam? Our acquisitions desk offers fair valuation and clean, fast settlement through RRP Realty's legal team.</p>
+            <Link to="/sell-your-plot-ibrahimpatnam" className="mt-5 inline-flex items-center gap-2 btn-gold btn-gold-hover">Get a Buyback Quote <ArrowRight className="h-4 w-4" /></Link>
+          </div>
+        </div>
+      </Section>
+
+
+
       <Section eyebrow="Location" title="Strategic Connectivity">
         <div className="grid lg:grid-cols-2 gap-8 items-stretch">
           <div className="rounded-2xl overflow-hidden border border-border h-[420px]">
