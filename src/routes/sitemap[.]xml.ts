@@ -16,7 +16,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/open-plots-near-hyderabad", changefreq: "weekly", priority: "0.9" },
           { path: "/janaharsha-dream-city", changefreq: "weekly", priority: "0.9" },
           { path: "/investment-plots-hyderabad", changefreq: "weekly", priority: "0.9" },
-          { path: "/hmda-plots-ibrahimpatnam", changefreq: "weekly", priority: "0.9" },
+          { path: "/sell-your-plot-ibrahimpatnam", changefreq: "weekly", priority: "0.8" },
           { path: "/residential-plots-hyderabad", changefreq: "weekly", priority: "0.9" },
           { path: "/site-visit-booking", changefreq: "monthly", priority: "0.8" },
           { path: "/layout-downloads", changefreq: "monthly", priority: "0.8" },
