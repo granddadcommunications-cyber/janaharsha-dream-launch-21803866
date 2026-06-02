@@ -13,9 +13,9 @@ export const Route = createFileRoute("/about-rrp-realty")({
       { name: "description", content: "RRP Realty is an independent Hyderabad real estate firm dealing in plots across the Janaharsha venture, Ibrahimpatnam. 4,00,000+ sq yards sold since 2016." },
       { property: "og:title", content: "About RRP Realty — Janaharsha Plot Dealer" },
       { property: "og:description", content: "Independent realty firm. 4 lakh+ sq yards transacted in Ibrahimpatnam since 2016." },
-      { property: "og:url", content: "/about-rrp-realty" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/about-rrp-realty" },
     ],
-    links: [{ rel: "canonical", href: "/about-rrp-realty" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/about-rrp-realty" }],
   }),
   component: About,
 });

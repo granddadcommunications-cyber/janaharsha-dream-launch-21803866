@@ -12,9 +12,9 @@ export const Route = createFileRoute("/blog/")({
       { name: "description", content: "Insights on Hyderabad real estate, Ibrahimpatnam growth, and smart plot investing — from the Janaharsha team." },
       { property: "og:title", content: "Janaharsha Blog — Real Estate Insights" },
       { property: "og:description", content: "Expert insights on Hyderabad plotted real estate." },
-      { property: "og:url", content: "/blog" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/blog" },
     ],
-    links: [{ rel: "canonical", href: "/blog" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/blog" }],
   }),
   component: BlogIndex,
 });

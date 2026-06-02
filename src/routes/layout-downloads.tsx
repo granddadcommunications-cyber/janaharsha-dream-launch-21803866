@@ -14,9 +14,9 @@ export const Route = createFileRoute("/layout-downloads")({
       { name: "description", content: "Download Janaharsha Dream City layout PDFs for all phases — Ibrahimpatnam, Hyderabad. Call 9010341194." },
       { property: "og:title", content: "Layout Downloads — Janaharsha Plots" },
       { property: "og:description", content: "Get layout PDFs for all Janaharsha phases." },
-      { property: "og:url", content: "/layout-downloads" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/layout-downloads" },
     ],
-    links: [{ rel: "canonical", href: "/layout-downloads" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/layout-downloads" }],
   }),
   component: Layouts,
 });

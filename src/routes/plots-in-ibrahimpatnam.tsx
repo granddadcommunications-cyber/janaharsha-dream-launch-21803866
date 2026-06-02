@@ -8,9 +8,9 @@ export const Route = createFileRoute("/plots-in-ibrahimpatnam")({
       { name: "description", content: "Buy premium plots in Ibrahimpatnam, Hyderabad. Multiple phases, wide roads, ORR connectivity. Call 9010341194 for pricing." },
       { property: "og:title", content: "Plots in Ibrahimpatnam — Janaharsha Plots" },
       { property: "og:description", content: "Strategic plots in Ibrahimpatnam by Janaharsha Dream City." },
-      { property: "og:url", content: "/plots-in-ibrahimpatnam" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/plots-in-ibrahimpatnam" },
     ],
-    links: [{ rel: "canonical", href: "/plots-in-ibrahimpatnam" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/plots-in-ibrahimpatnam" }],
   }),
   component: () => (
     <LandingTemplate

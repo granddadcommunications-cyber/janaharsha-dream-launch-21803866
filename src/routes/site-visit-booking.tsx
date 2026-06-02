@@ -13,9 +13,9 @@ export const Route = createFileRoute("/site-visit-booking")({
       { name: "description", content: "Schedule a guided site visit to Janaharsha Dream City layouts in Ibrahimpatnam. Free cab pickup. Call 9010341194." },
       { property: "og:title", content: "Book Site Visit — Janaharsha Plots" },
       { property: "og:description", content: "Free guided site visit to Janaharsha layouts." },
-      { property: "og:url", content: "/site-visit-booking" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/site-visit-booking" },
     ],
-    links: [{ rel: "canonical", href: "/site-visit-booking" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/site-visit-booking" }],
   }),
   component: SiteVisit,
 });

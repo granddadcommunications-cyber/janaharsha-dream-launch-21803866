@@ -18,9 +18,9 @@ export const Route = createFileRoute("/blog/$slug")({
       { property: "og:title", content: loaderData.title },
       { property: "og:description", content: loaderData.description },
       { property: "og:type", content: "article" },
-      { property: "og:url", content: `/blog/${loaderData.slug}` },
+      { property: "og:url", content: `https://janaharsha-dream-launch.lovable.app/blog/${loaderData.slug}` },
     ] : [],
-    links: loaderData ? [{ rel: "canonical", href: `/blog/${loaderData.slug}` }] : [],
+    links: loaderData ? [{ rel: "canonical", href: `https://janaharsha-dream-launch.lovable.app/blog/${loaderData.slug}` }] : [],
     scripts: loaderData ? [{
       type: "application/ld+json",
       children: JSON.stringify({

@@ -13,9 +13,9 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Contact Janaharsha Plots — call, WhatsApp or schedule a site visit. Office in Hyderabad. Operated by RRP Realty." },
       { property: "og:title", content: "Contact — Janaharsha Plots" },
       { property: "og:description", content: "Reach Janaharsha Plots for pricing, layouts and site visits." },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/contact" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/contact" }],
   }),
   component: Contact,
 });

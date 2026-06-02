@@ -8,9 +8,9 @@ export const Route = createFileRoute("/open-plots-near-hyderabad")({
       { name: "description", content: "Open plots near Hyderabad in Ibrahimpatnam. Multiple layouts, premium amenities, ready for investment. Call 9010341194." },
       { property: "og:title", content: "Open Plots Near Hyderabad — Janaharsha" },
       { property: "og:description", content: "Curated open plots across Janaharsha Dream City near Hyderabad." },
-      { property: "og:url", content: "/open-plots-near-hyderabad" },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/open-plots-near-hyderabad" },
     ],
-    links: [{ rel: "canonical", href: "/open-plots-near-hyderabad" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/open-plots-near-hyderabad" }],
   }),
   component: () => (
     <LandingTemplate
