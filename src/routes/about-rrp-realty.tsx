@@ -37,7 +37,7 @@ function About() {
             <h2 className="text-navy font-display text-2xl pt-4">What we do</h2>
             <ul className="space-y-2">
               <li>• <strong className="text-navy">Sell plots</strong> in active Janaharsha venture phases.</li>
-              <li>• <strong className="text-navy">Resell plots</strong> for existing owners at fair, current-market rates via our resale desk.</li>
+              <li>• <strong className="text-navy">Resell plots</strong> for existing owners at fair, current-market rates via resale.</li>
               <li>• <strong className="text-navy">Document walkthroughs</strong> — every approval, parent document and encumbrance, shared upfront.</li>
               <li>• <strong className="text-navy">Site visits & guidance</strong> — from first call to registration.</li>
             </ul>
@@ -47,7 +47,7 @@ function About() {
                 { Icon: Building, t: "4,00,000+ Sq Yards Sold" },
                 { Icon: Users, t: "Since 2016 in Ibrahimpatnam" },
                 { Icon: Target, t: "Single-market specialists" },
-                { Icon: Award, t: "Sell + Resale desk" },
+                { Icon: Award, t: "Sell + Resale" },
               ].map(({ Icon, t }) => (
                 <div key={t} className="bg-secondary rounded-xl p-4 flex items-center gap-3 border border-border">
                   <Icon className="h-6 w-6 text-gold" />

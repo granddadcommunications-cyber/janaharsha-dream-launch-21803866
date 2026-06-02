@@ -36,7 +36,7 @@ export function FAQ({ items, title = "Frequently Asked Questions" }: { items: Fa
 
 export const DEFAULT_FAQS: FaqItem[] = [
   { q: "Who operates Janaharsha Plots?", a: "Janaharsha Plots is owned and operated by RRP Realty, a Hyderabad-based real estate developer with a focus on plotted developments across the Ibrahimpatnam corridor." },
-  { q: "Do you only sell plots, or also help resell them?", a: "Both. We sell new plots across Janaharsha Dream City phases and we also run a resale desk that lists and resells previously owned plots in the Ibrahimpatnam belt — including plots originally purchased through us." },
+  { q: "Do you only sell plots, or also help resell them?", a: "Both. We sell new plots across Janaharsha Dream City phases and we also handle resale of previously owned plots in the Ibrahimpatnam belt — including plots originally purchased through us." },
   { q: "Are Janaharsha layouts properly documented?", a: "Yes. Each phase follows proper documentation and approvals. We share complete paperwork transparently during your site visit so you can verify everything before purchase." },
   { q: "How far is Ibrahimpatnam from Hyderabad?", a: "Ibrahimpatnam is approximately 30–40 km from central Hyderabad, well-connected via the Outer Ring Road and major arterial routes." },
   { q: "Can I schedule a site visit?", a: "Yes. Click 'Book Site Visit' anywhere on the site or call 9010341194. We arrange convenient slots including weekends." },

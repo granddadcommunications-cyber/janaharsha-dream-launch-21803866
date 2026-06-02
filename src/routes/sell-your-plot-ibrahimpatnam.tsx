@@ -6,7 +6,7 @@ export const Route = createFileRoute("/sell-your-plot-ibrahimpatnam")({
     meta: [
       { title: "Sell or Resell Your Plot in Ibrahimpatnam — RRP Realty" },
       { name: "description", content: "List your Ibrahimpatnam plot for resale with RRP Realty. We connect you to active buyers, handle valuation and documentation. Call 9010341194." },
-      { property: "og:title", content: "Sell Your Plot — RRP Realty Resale Desk" },
+      { property: "og:title", content: "Sell Your Plot — RRP Realty Resale" },
       { property: "og:description", content: "RRP Realty lists and resells previously owned plots in the Ibrahimpatnam corridor. Fair valuation, end-to-end paperwork." },
       { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/sell-your-plot-ibrahimpatnam" },
     ],
@@ -14,10 +14,10 @@ export const Route = createFileRoute("/sell-your-plot-ibrahimpatnam")({
   }),
   component: () => (
     <LandingTemplate
-      eyebrow="Resale Desk"
+      eyebrow="Resale"
       title="Resell Your Plot in Ibrahimpatnam"
       subtitle="RRP Realty is an independent real estate firm. We help existing plot owners in and around Ibrahimpatnam — including Janaharsha venture phases — find serious buyers at fair, current market rates."
-      intro="Whether you bought a plot years ago or hold land elsewhere in the Ibrahimpatnam corridor, our resale desk handles valuation, buyer matching and paperwork end-to-end."
+      intro="Whether you bought a plot years ago or hold land elsewhere in the Ibrahimpatnam corridor, we handle resale including valuation, buyer matching and paperwork end-to-end."
       body={
         <>
           <p>Selling a plot privately can take months and involve uncertain buyers. With RRP Realty's active resale channel, you get a single point of contact, transparent pricing based on current corridor rates, and full documentation support.</p>
