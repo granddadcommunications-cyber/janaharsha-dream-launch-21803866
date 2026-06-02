@@ -4,31 +4,31 @@ import { LandingTemplate } from "@/components/site/LandingTemplate";
 export const Route = createFileRoute("/sell-your-plot-ibrahimpatnam")({
   head: () => ({
     meta: [
-      { title: "Sell Your Plot in Ibrahimpatnam — We Buy Resale Plots" },
-      { name: "description", content: "We don't just sell — we also buy back previously sold plots in Ibrahimpatnam, Hyderabad. Fair valuation, fast settlement. Call 9010341194." },
-      { property: "og:title", content: "Sell Your Plot — Janaharsha Buys Resale Plots" },
-      { property: "og:description", content: "Janaharsha Plots buys previously sold plots in Ibrahimpatnam. Transparent valuation, quick payout." },
+      { title: "Sell or Resell Your Plot in Ibrahimpatnam — RRP Realty" },
+      { name: "description", content: "List your Ibrahimpatnam plot for resale with RRP Realty. We connect you to active buyers, handle valuation and documentation. Call 9010341194." },
+      { property: "og:title", content: "Sell Your Plot — RRP Realty Resale Desk" },
+      { property: "og:description", content: "RRP Realty lists and resells previously owned plots in the Ibrahimpatnam corridor. Fair valuation, end-to-end paperwork." },
       { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/sell-your-plot-ibrahimpatnam" },
     ],
     links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/sell-your-plot-ibrahimpatnam" }],
   }),
   component: () => (
     <LandingTemplate
-      eyebrow="Resale & Buyback"
-      title="We Buy Previously Sold Plots in Ibrahimpatnam"
-      subtitle="Janaharsha Plots — operated by RRP Realty — is not just a seller. We also actively buy back resale plots from existing owners in and around Ibrahimpatnam, Hyderabad."
-      intro="Whether you bought a plot from us years ago or hold land elsewhere in the Ibrahimpatnam corridor, our team offers fair, market-aligned valuations and quick, paperwork-clean settlements."
+      eyebrow="Resale Desk"
+      title="Resell Your Plot in Ibrahimpatnam"
+      subtitle="RRP Realty is an independent real estate firm. We help existing plot owners in and around Ibrahimpatnam — including Janaharsha venture phases — find serious buyers at fair, current market rates."
+      intro="Whether you bought a plot years ago or hold land elsewhere in the Ibrahimpatnam corridor, our resale desk handles valuation, buyer matching and paperwork end-to-end."
       body={
         <>
-          <p>Selling a plot privately can take months and involve uncertain buyers. With our in-house buyback channel, you get a single point of contact, transparent pricing based on current corridor rates, and end-to-end documentation support.</p>
-          <p>Share your plot details — phase, village, extent and documents — and our acquisitions team will revert with an indicative quote within 24 hours.</p>
+          <p>Selling a plot privately can take months and involve uncertain buyers. With RRP Realty's active resale channel, you get a single point of contact, transparent pricing based on current corridor rates, and full documentation support.</p>
+          <p>Share your plot details — phase, village, extent and documents — and our team will revert with an indicative quote and a marketing plan within 24 hours.</p>
         </>
       }
       highlights={[
-        { t: "Buyback of past plots", d: "Sold a Janaharsha plot earlier? We'll evaluate it for repurchase." },
-        { t: "Resale acquisitions", d: "We also acquire eligible third-party plots in the Ibrahimpatnam belt." },
+        { t: "Resale of existing plots", d: "Own a Janaharsha or Ibrahimpatnam plot? We'll list and resell it for you." },
+        { t: "Active buyer network", d: "We connect your plot directly with buyers actively searching in this corridor." },
         { t: "Fair market valuation", d: "Pricing benchmarked against current corridor and phase rates." },
-        { t: "Fast, clean settlement", d: "Document verification and payout handled by RRP Realty's legal desk." },
+        { t: "Fast, clean settlement", d: "Document verification and registration handled by RRP Realty's legal desk." },
       ]}
     />
   ),

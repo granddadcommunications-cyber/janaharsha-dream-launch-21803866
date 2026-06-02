@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
           mainEntity: [
             { "@type": "Question", name: "Who is RRP Realty in Ibrahimpatnam?", acceptedAnswer: { "@type": "Answer", text: "RRP Realty is an independent Hyderabad real estate firm dealing in plots across the Janaharsha venture, Ibrahimpatnam. We have sold 4,00,000+ sq yards in this corridor since 2016." } },
             { "@type": "Question", name: "Where is the Janaharsha venture located?", acceptedAnswer: { "@type": "Answer", text: "The Janaharsha venture is a plotted development across multiple phases in and around Ibrahimpatnam, Hyderabad — covering villages like Mangalpally, Yacharam, Kandukur, Tukkuguda and Maheshwaram, with direct ORR connectivity." } },
-            { "@type": "Question", name: "Do you buy back plots in Ibrahimpatnam?", acceptedAnswer: { "@type": "Answer", text: "Yes. RRP Realty runs an active resale desk and buys back previously sold plots in the Janaharsha venture and across Ibrahimpatnam at fair, current market rates." } },
+            { "@type": "Question", name: "Do you help resell plots in Ibrahimpatnam?", acceptedAnswer: { "@type": "Answer", text: "Yes. RRP Realty runs an active resale desk that lists and resells previously owned plots in the Janaharsha venture and across Ibrahimpatnam at fair, current market rates." } },
             { "@type": "Question", name: "How many phases does Janaharsha have?", acceptedAnswer: { "@type": "Answer", text: "There are 13+ Janaharsha layout phases across the Ibrahimpatnam corridor, with wide internal roads, residential zoning and full documentation." } },
           ],
         }),
@@ -67,7 +67,7 @@ function Home() {
               Buy or Resell Plots in <span className="text-gold">Janaharsha Venture</span>, Ibrahimpatnam
             </h1>
             <p className="mt-6 text-lg text-white/80 max-w-xl leading-relaxed">
-              <span className="text-gold font-medium">RRP Realty</span> is an independent real estate firm dealing in plots across the Janaharsha venture in Ibrahimpatnam. We've sold <span className="text-gold font-semibold">{SITE.sqYardsSold} sq yards</span> in this corridor since {SITE.since} — and we actively buy back previously sold plots too.
+              <span className="text-gold font-medium">RRP Realty</span> is an independent real estate firm dealing in plots across the Janaharsha venture in Ibrahimpatnam. We've sold <span className="text-gold font-semibold">{SITE.sqYardsSold} sq yards</span> in this corridor since {SITE.since} — and we run an active resale desk to help existing owners exit too.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/site-visit-booking" className="btn-gold btn-gold-hover">Book Site Visit <ArrowRight className="h-4 w-4" /></Link>
