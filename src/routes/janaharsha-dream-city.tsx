@@ -4,7 +4,7 @@ import { LandingTemplate } from "@/components/site/LandingTemplate";
 export const Route = createFileRoute("/janaharsha-dream-city")({
   head: () => ({
     meta: [
-      { title: "Janaharsha Dream City — Master-Planned Plotted Township Hyderabad" },
+      { title: "Janaharsha Dream City — Plotted Township in Hyderabad" },
       { name: "description", content: "Janaharsha Dream City — one of Hyderabad's largest plotted developments in Ibrahimpatnam. 13+ phases. Call 9010341194." },
       { property: "og:title", content: "Janaharsha Dream City — Plotted Township" },
       { property: "og:description", content: "Master-planned plotted township across Ibrahimpatnam." },

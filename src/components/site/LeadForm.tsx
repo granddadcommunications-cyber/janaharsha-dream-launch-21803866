@@ -29,12 +29,12 @@ export function LeadForm({ title = "Get Layout & Pricing", subtitle = "Share you
     setTimeout(() => { setLoading(false); toast.success("Opening WhatsApp with your details…"); }, 500);
   };
 
-  const fieldCls = "h-11 px-4 rounded-lg border border-input bg-background text-sm text-navy placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-gold";
+  const fieldCls = "h-11 px-4 rounded-lg border border-input bg-background text-sm text-navy placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-gold";
   const labelCls = "text-xs font-semibold text-navy uppercase tracking-wider";
 
   return (
     <div className={`bg-white rounded-2xl p-6 md:p-8 ${compact ? "" : "shadow-[var(--shadow-luxe)] border border-border"}`}>
-      <h3 className="font-display text-2xl font-semibold text-navy">{title}</h3>
+      <h2 className="font-display text-2xl font-semibold text-navy">{title}</h2>
       <p className="text-muted-foreground text-sm mt-1">{subtitle}</p>
       <form onSubmit={submit} className="mt-5 grid gap-4">
         <div className="grid gap-1.5">

@@ -4,7 +4,7 @@ import { LandingTemplate } from "@/components/site/LandingTemplate";
 export const Route = createFileRoute("/sell-your-plot-ibrahimpatnam")({
   head: () => ({
     meta: [
-      { title: "Sell Your Plot in Ibrahimpatnam — We Buy Resale Plots | Janaharsha" },
+      { title: "Sell Your Plot in Ibrahimpatnam — We Buy Resale Plots" },
       { name: "description", content: "We don't just sell — we also buy back previously sold plots in Ibrahimpatnam, Hyderabad. Fair valuation, fast settlement. Call 9010341194." },
       { property: "og:title", content: "Sell Your Plot — Janaharsha Buys Resale Plots" },
       { property: "og:description", content: "Janaharsha Plots buys previously sold plots in Ibrahimpatnam. Transparent valuation, quick payout." },
