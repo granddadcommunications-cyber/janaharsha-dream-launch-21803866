@@ -7,10 +7,19 @@ export function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 bg-navy/95 backdrop-blur supports-[backdrop-filter]:bg-navy/80 text-navy-foreground border-b border-white/10">
+      <div className="bg-black/40 text-[11px] tracking-wider uppercase text-white/70 border-b border-white/10">
+        <div className="container-luxe flex items-center justify-between h-7">
+          <span>A venture operated by <span className="text-gold font-semibold">RRP Realty</span></span>
+          <span className="hidden sm:inline">Buying & Selling Plots in Ibrahimpatnam, Hyderabad</span>
+        </div>
+      </div>
       <div className="container-luxe flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-gold text-gold-foreground font-bold font-display">J</span>
-          <span className="font-display font-semibold tracking-tight text-lg">Janaharsha <span className="text-gold">Plots</span></span>
+          <span className="font-display font-semibold tracking-tight text-lg leading-tight flex flex-col">
+            <span>Janaharsha <span className="text-gold">Plots</span></span>
+            <span className="text-[10px] font-normal text-white/60 tracking-wider uppercase">By RRP Realty</span>
+          </span>
         </Link>
         <nav className="hidden lg:flex items-center gap-7 text-sm">
           {NAV_LINKS.map(n => (
