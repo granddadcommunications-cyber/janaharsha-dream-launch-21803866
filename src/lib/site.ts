@@ -31,6 +31,7 @@ export const NAV_LINKS = [
   { label: "Layouts", to: "/layout-downloads" },
   { label: "Dream City", to: "/janaharsha-dream-city" },
   { label: "Investment", to: "/investment-plots-hyderabad" },
+  { label: "Sell / Resale", to: "/sell-your-plot-ibrahimpatnam" },
   { label: "About", to: "/about-rrp-realty" },
   { label: "Contact", to: "/contact" },
 ];
