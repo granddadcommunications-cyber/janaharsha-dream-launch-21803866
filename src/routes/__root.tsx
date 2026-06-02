@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Janaharsha Plots — HMDA & Residential Plots in Ibrahimpatnam, Hyderabad" },
-      { name: "description", content: "Premium plotted developments in Ibrahimpatnam, Hyderabad. Janaharsha Dream City — strategic locations, wide roads, residential zoning. Call 9010341194." },
+      { title: "Janaharsha Plots — Residential Plots in Ibrahimpatnam, Hyderabad | RRP Realty" },
+      { name: "description", content: "Buy & sell residential plots in Ibrahimpatnam, Hyderabad. Janaharsha Dream City by RRP Realty — multiple phases, wide roads, plus resale buyback. Call 9010341194." },
       { name: "author", content: "Janaharsha Plots — RRP Realty" },
       { property: "og:site_name", content: "Janaharsha Plots" },
       { property: "og:type", content: "website" },
