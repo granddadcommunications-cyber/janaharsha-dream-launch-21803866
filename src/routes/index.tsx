@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Janaharsha Plots — Premium Plots in Ibrahimpatnam, Hyderabad" },
-      { name: "description", content: "Own residential & HMDA plots in Janaharsha Dream City, Ibrahimpatnam. Multiple phases, wide roads, ORR access. Book site visit: 9010341194." },
+      { name: "description", content: "Own residential plots in Janaharsha Dream City, Ibrahimpatnam — by RRP Realty. We also buy back previously sold plots. Multiple phases, ORR access. Call 9010341194." },
       { property: "og:title", content: "Janaharsha Plots — Plots in Ibrahimpatnam, Hyderabad" },
       { property: "og:description", content: "Multiple approved layout phases across Hyderabad's fastest growing investment corridor." },
       { property: "og:url", content: "/" },
