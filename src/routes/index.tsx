@@ -3,7 +3,7 @@ import { PageLayout } from "@/components/site/PageLayout";
 import { Section } from "@/components/site/Section";
 import { LeadForm } from "@/components/site/LeadForm";
 import { FAQ, DEFAULT_FAQS } from "@/components/site/FAQ";
-import { SITE, PHASES, FEATURED_LAYOUTS, waLink } from "@/lib/site";
+import { SITE, PHASES, waLink } from "@/lib/site";
 import heroImg from "@/assets/hero-aerial.jpg";
 import growthImg from "@/assets/growth-corridor.jpg";
 import layoutImg from "@/assets/layout-plan.jpg";
@@ -164,30 +164,6 @@ function Home() {
         </div>
       </Section>
 
-      <Section className="bg-secondary" eyebrow="Featured Layouts" title="Available Now">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {FEATURED_LAYOUTS.map(l => (
-            <article key={l.name} className="bg-white rounded-2xl overflow-hidden border border-border hover:shadow-[var(--shadow-luxe)] transition-shadow">
-              <div className="relative aspect-[16/10]">
-                <img src={layoutImg} alt={`${l.name} layout at ${l.village}`} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
-                <span className="absolute top-3 right-3 text-xs font-semibold bg-gold text-gold-foreground px-3 py-1 rounded-full">{l.availability}</span>
-              </div>
-              <div className="p-5">
-                <h3 className="font-display font-semibold text-lg text-navy">{l.name}</h3>
-                <div className="text-sm text-muted-foreground mt-1 flex items-center gap-1"><MapPin className="h-3.5 w-3.5 text-gold" /> {l.village}</div>
-                <div className="mt-4 flex items-center justify-between text-sm">
-                  <span className="text-muted-foreground">Road width</span>
-                  <span className="font-semibold text-navy">{l.road}</span>
-                </div>
-                <div className="mt-5 grid grid-cols-2 gap-2">
-                  <Link to="/layout-downloads" className="text-sm h-10 grid place-items-center rounded-full border border-navy text-navy hover:bg-navy hover:text-white transition-colors">Download</Link>
-                  <a href={waLink(`Hi, I'm interested in Janaharsha ${l.name} (${l.village}).`)} target="_blank" rel="noopener noreferrer" className="text-sm h-10 grid place-items-center btn-gold btn-gold-hover">Enquire</a>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </Section>
 
       <Section eyebrow="Sell & Resell" title="We Sell New Plots — And Help You Resell Existing Ones" subtitle="RRP Realty handles active resale for plots across the Janaharsha venture and the wider Ibrahimpatnam corridor.">
         <div className="grid md:grid-cols-2 gap-6">
