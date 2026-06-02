@@ -11,13 +11,13 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SiteVisitBookingRouteImport } from './routes/site-visit-booking'
+import { Route as SellYourPlotIbrahimpatnamRouteImport } from './routes/sell-your-plot-ibrahimpatnam'
 import { Route as ResidentialPlotsHyderabadRouteImport } from './routes/residential-plots-hyderabad'
 import { Route as PlotsInIbrahimpatnamRouteImport } from './routes/plots-in-ibrahimpatnam'
 import { Route as OpenPlotsNearHyderabadRouteImport } from './routes/open-plots-near-hyderabad'
 import { Route as LayoutDownloadsRouteImport } from './routes/layout-downloads'
 import { Route as JanaharshaDreamCityRouteImport } from './routes/janaharsha-dream-city'
 import { Route as InvestmentPlotsHyderabadRouteImport } from './routes/investment-plots-hyderabad'
-import { Route as HmdaPlotsIbrahimpatnamRouteImport } from './routes/hmda-plots-ibrahimpatnam'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRrpRealtyRouteImport } from './routes/about-rrp-realty'
 import { Route as IndexRouteImport } from './routes/index'
@@ -34,6 +34,12 @@ const SiteVisitBookingRoute = SiteVisitBookingRouteImport.update({
   path: '/site-visit-booking',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SellYourPlotIbrahimpatnamRoute =
+  SellYourPlotIbrahimpatnamRouteImport.update({
+    id: '/sell-your-plot-ibrahimpatnam',
+    path: '/sell-your-plot-ibrahimpatnam',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ResidentialPlotsHyderabadRoute =
   ResidentialPlotsHyderabadRouteImport.update({
     id: '/residential-plots-hyderabad',
@@ -66,11 +72,6 @@ const InvestmentPlotsHyderabadRoute =
     path: '/investment-plots-hyderabad',
     getParentRoute: () => rootRouteImport,
   } as any)
-const HmdaPlotsIbrahimpatnamRoute = HmdaPlotsIbrahimpatnamRouteImport.update({
-  id: '/hmda-plots-ibrahimpatnam',
-  path: '/hmda-plots-ibrahimpatnam',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -101,13 +102,13 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about-rrp-realty': typeof AboutRrpRealtyRoute
   '/contact': typeof ContactRoute
-  '/hmda-plots-ibrahimpatnam': typeof HmdaPlotsIbrahimpatnamRoute
   '/investment-plots-hyderabad': typeof InvestmentPlotsHyderabadRoute
   '/janaharsha-dream-city': typeof JanaharshaDreamCityRoute
   '/layout-downloads': typeof LayoutDownloadsRoute
   '/open-plots-near-hyderabad': typeof OpenPlotsNearHyderabadRoute
   '/plots-in-ibrahimpatnam': typeof PlotsInIbrahimpatnamRoute
   '/residential-plots-hyderabad': typeof ResidentialPlotsHyderabadRoute
+  '/sell-your-plot-ibrahimpatnam': typeof SellYourPlotIbrahimpatnamRoute
   '/site-visit-booking': typeof SiteVisitBookingRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -117,13 +118,13 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about-rrp-realty': typeof AboutRrpRealtyRoute
   '/contact': typeof ContactRoute
-  '/hmda-plots-ibrahimpatnam': typeof HmdaPlotsIbrahimpatnamRoute
   '/investment-plots-hyderabad': typeof InvestmentPlotsHyderabadRoute
   '/janaharsha-dream-city': typeof JanaharshaDreamCityRoute
   '/layout-downloads': typeof LayoutDownloadsRoute
   '/open-plots-near-hyderabad': typeof OpenPlotsNearHyderabadRoute
   '/plots-in-ibrahimpatnam': typeof PlotsInIbrahimpatnamRoute
   '/residential-plots-hyderabad': typeof ResidentialPlotsHyderabadRoute
+  '/sell-your-plot-ibrahimpatnam': typeof SellYourPlotIbrahimpatnamRoute
   '/site-visit-booking': typeof SiteVisitBookingRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -134,13 +135,13 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about-rrp-realty': typeof AboutRrpRealtyRoute
   '/contact': typeof ContactRoute
-  '/hmda-plots-ibrahimpatnam': typeof HmdaPlotsIbrahimpatnamRoute
   '/investment-plots-hyderabad': typeof InvestmentPlotsHyderabadRoute
   '/janaharsha-dream-city': typeof JanaharshaDreamCityRoute
   '/layout-downloads': typeof LayoutDownloadsRoute
   '/open-plots-near-hyderabad': typeof OpenPlotsNearHyderabadRoute
   '/plots-in-ibrahimpatnam': typeof PlotsInIbrahimpatnamRoute
   '/residential-plots-hyderabad': typeof ResidentialPlotsHyderabadRoute
+  '/sell-your-plot-ibrahimpatnam': typeof SellYourPlotIbrahimpatnamRoute
   '/site-visit-booking': typeof SiteVisitBookingRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -152,13 +153,13 @@ export interface FileRouteTypes {
     | '/'
     | '/about-rrp-realty'
     | '/contact'
-    | '/hmda-plots-ibrahimpatnam'
     | '/investment-plots-hyderabad'
     | '/janaharsha-dream-city'
     | '/layout-downloads'
     | '/open-plots-near-hyderabad'
     | '/plots-in-ibrahimpatnam'
     | '/residential-plots-hyderabad'
+    | '/sell-your-plot-ibrahimpatnam'
     | '/site-visit-booking'
     | '/sitemap.xml'
     | '/blog/$slug'
@@ -168,13 +169,13 @@ export interface FileRouteTypes {
     | '/'
     | '/about-rrp-realty'
     | '/contact'
-    | '/hmda-plots-ibrahimpatnam'
     | '/investment-plots-hyderabad'
     | '/janaharsha-dream-city'
     | '/layout-downloads'
     | '/open-plots-near-hyderabad'
     | '/plots-in-ibrahimpatnam'
     | '/residential-plots-hyderabad'
+    | '/sell-your-plot-ibrahimpatnam'
     | '/site-visit-booking'
     | '/sitemap.xml'
     | '/blog/$slug'
@@ -184,13 +185,13 @@ export interface FileRouteTypes {
     | '/'
     | '/about-rrp-realty'
     | '/contact'
-    | '/hmda-plots-ibrahimpatnam'
     | '/investment-plots-hyderabad'
     | '/janaharsha-dream-city'
     | '/layout-downloads'
     | '/open-plots-near-hyderabad'
     | '/plots-in-ibrahimpatnam'
     | '/residential-plots-hyderabad'
+    | '/sell-your-plot-ibrahimpatnam'
     | '/site-visit-booking'
     | '/sitemap.xml'
     | '/blog/$slug'
@@ -201,13 +202,13 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRrpRealtyRoute: typeof AboutRrpRealtyRoute
   ContactRoute: typeof ContactRoute
-  HmdaPlotsIbrahimpatnamRoute: typeof HmdaPlotsIbrahimpatnamRoute
   InvestmentPlotsHyderabadRoute: typeof InvestmentPlotsHyderabadRoute
   JanaharshaDreamCityRoute: typeof JanaharshaDreamCityRoute
   LayoutDownloadsRoute: typeof LayoutDownloadsRoute
   OpenPlotsNearHyderabadRoute: typeof OpenPlotsNearHyderabadRoute
   PlotsInIbrahimpatnamRoute: typeof PlotsInIbrahimpatnamRoute
   ResidentialPlotsHyderabadRoute: typeof ResidentialPlotsHyderabadRoute
+  SellYourPlotIbrahimpatnamRoute: typeof SellYourPlotIbrahimpatnamRoute
   SiteVisitBookingRoute: typeof SiteVisitBookingRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   BlogSlugRoute: typeof BlogSlugRoute
@@ -228,6 +229,13 @@ declare module '@tanstack/react-router' {
       path: '/site-visit-booking'
       fullPath: '/site-visit-booking'
       preLoaderRoute: typeof SiteVisitBookingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sell-your-plot-ibrahimpatnam': {
+      id: '/sell-your-plot-ibrahimpatnam'
+      path: '/sell-your-plot-ibrahimpatnam'
+      fullPath: '/sell-your-plot-ibrahimpatnam'
+      preLoaderRoute: typeof SellYourPlotIbrahimpatnamRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/residential-plots-hyderabad': {
@@ -272,13 +280,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InvestmentPlotsHyderabadRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/hmda-plots-ibrahimpatnam': {
-      id: '/hmda-plots-ibrahimpatnam'
-      path: '/hmda-plots-ibrahimpatnam'
-      fullPath: '/hmda-plots-ibrahimpatnam'
-      preLoaderRoute: typeof HmdaPlotsIbrahimpatnamRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -321,13 +322,13 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRrpRealtyRoute: AboutRrpRealtyRoute,
   ContactRoute: ContactRoute,
-  HmdaPlotsIbrahimpatnamRoute: HmdaPlotsIbrahimpatnamRoute,
   InvestmentPlotsHyderabadRoute: InvestmentPlotsHyderabadRoute,
   JanaharshaDreamCityRoute: JanaharshaDreamCityRoute,
   LayoutDownloadsRoute: LayoutDownloadsRoute,
   OpenPlotsNearHyderabadRoute: OpenPlotsNearHyderabadRoute,
   PlotsInIbrahimpatnamRoute: PlotsInIbrahimpatnamRoute,
   ResidentialPlotsHyderabadRoute: ResidentialPlotsHyderabadRoute,
+  SellYourPlotIbrahimpatnamRoute: SellYourPlotIbrahimpatnamRoute,
   SiteVisitBookingRoute: SiteVisitBookingRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   BlogSlugRoute: BlogSlugRoute,
@@ -336,3 +337,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
