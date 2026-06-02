@@ -34,7 +34,7 @@ export function LeadForm({ title = "Get Layout & Pricing", subtitle = "Share you
 
   return (
     <div className={`bg-white rounded-2xl p-6 md:p-8 ${compact ? "" : "shadow-[var(--shadow-luxe)] border border-border"}`}>
-      <h3 className="font-display text-2xl font-semibold text-navy">{title}</h3>
+      <h2 className="font-display text-2xl font-semibold text-navy">{title}</h2>
       <p className="text-muted-foreground text-sm mt-1">{subtitle}</p>
       <form onSubmit={submit} className="mt-5 grid gap-4">
         <div className="grid gap-1.5">

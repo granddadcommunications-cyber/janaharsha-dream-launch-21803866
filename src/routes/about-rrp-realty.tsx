@@ -34,7 +34,7 @@ function About() {
             <p className="text-navy font-medium text-lg">RRP Realty is a Hyderabad-based, independent real estate firm. We are not the developers of the Janaharsha venture — we are the on-ground sales and resale partner that buyers and sellers in the Ibrahimpatnam corridor have trusted since 2016.</p>
             <p>Over the last decade, we have transacted more than <strong className="text-navy">{SITE.sqYardsSold} sq yards</strong> of plotted inventory across Ibrahimpatnam — primarily within the Janaharsha venture phases, plus select resale plots from existing owners.</p>
             <p>Our edge is simple: deep, single-market focus. We know every Janaharsha phase, every village boundary, every approval status and every realistic resale rate in this corridor. That's why families, NRIs and long-horizon investors come to us — first to buy, and years later to resell.</p>
-            <h3 className="text-navy font-display text-2xl pt-4">What we do</h3>
+            <h2 className="text-navy font-display text-2xl pt-4">What we do</h2>
             <ul className="space-y-2">
               <li>• <strong className="text-navy">Sell plots</strong> in active Janaharsha venture phases.</li>
               <li>• <strong className="text-navy">Buy back / resell plots</strong> for existing owners at fair, current-market rates.</li>
