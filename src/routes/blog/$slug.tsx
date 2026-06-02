@@ -52,7 +52,7 @@ function Post() {
         <div className="grid lg:grid-cols-[2fr_1fr] gap-12">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-navy font-medium leading-relaxed">{post.description}</p>
-            {post.content.map((para, i) => (
+            {post.content.map((para: string, i: number) => (
               <p key={i} className="text-muted-foreground leading-relaxed mt-4">{para}</p>
             ))}
             <div className="mt-10 p-6 bg-secondary rounded-2xl border border-border not-prose">
