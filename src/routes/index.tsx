@@ -15,10 +15,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Janaharsha Plots — Premium Plots in Ibrahimpatnam, Hyderabad" },
-      { name: "description", content: "Own residential plots in Janaharsha Dream City, Ibrahimpatnam — by RRP Realty. We also buy back previously sold plots. Multiple phases, ORR access. Call 9010341194." },
-      { property: "og:title", content: "Janaharsha Plots — Plots in Ibrahimpatnam, Hyderabad" },
-      { property: "og:description", content: "Multiple approved layout phases across Hyderabad's fastest growing investment corridor." },
+      { title: "Janaharsha Plots in Ibrahimpatnam, Hyderabad | RRP Realty" },
+      { name: "description", content: "Buy & resell plots in the Janaharsha venture, Ibrahimpatnam. RRP Realty has sold 4,00,000+ sq yards since 2016. 13+ phases. Call 9010341194." },
+      { property: "og:title", content: "Janaharsha Plots, Ibrahimpatnam — by RRP Realty" },
+      { property: "og:description", content: "Independent plot dealer for the Janaharsha venture. 4 lakh+ sq yards sold across Ibrahimpatnam since 2016." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -36,24 +36,24 @@ function Home() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="container-luxe relative grid lg:grid-cols-[1.4fr_1fr] gap-12 items-center py-20 md:py-28">
           <div>
-            <p className="eyebrow">Janaharsha Dream City • Ibrahimpatnam • Operated by RRP Realty</p>
+            <p className="eyebrow">RRP Realty • Independent Plot Dealer • Janaharsha Venture, Ibrahimpatnam</p>
             <h1 className="mt-4 text-4xl md:text-6xl font-semibold leading-[1.05] tracking-tight">
-              Buy, Sell or Resell Land in Hyderabad's <span className="text-gold">Fastest Growing</span> Investment Corridor
+              Buy or Resell Plots in <span className="text-gold">Janaharsha Venture</span>, Ibrahimpatnam
             </h1>
             <p className="mt-6 text-lg text-white/80 max-w-xl leading-relaxed">
-              Janaharsha Dream City, by <span className="text-gold font-medium">RRP Realty</span>, offers premium plots across Ibrahimpatnam — and we also buy back previously sold plots from existing owners.
+              <span className="text-gold font-medium">RRP Realty</span> is an independent real estate firm dealing in plots across the Janaharsha venture in Ibrahimpatnam. We've sold <span className="text-gold font-semibold">{SITE.sqYardsSold} sq yards</span> in this corridor since {SITE.since} — and we actively buy back previously sold plots too.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/site-visit-booking" className="btn-gold btn-gold-hover">Book Site Visit <ArrowRight className="h-4 w-4" /></Link>
-              <Link to="/layout-downloads" className="btn-outline-light hover:bg-white/10"><Download className="h-4 w-4" /> Download Layout</Link>
+              <Link to="/layout-downloads" className="btn-outline-light hover:bg-white/10"><Download className="h-4 w-4" /> Get Layouts</Link>
               <a href={`tel:${SITE.phoneTel}`} className="btn-outline-light hover:bg-white/10"><Phone className="h-4 w-4" /> Call Now</a>
             </div>
             <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl">
               {[
+                { k: "4L+", v: "Sq Yards Sold" },
+                { k: "Since 2016", v: "In Ibrahimpatnam" },
                 { k: "13+", v: "Layout Phases" },
-                { k: "Prime", v: "Ibrahimpatnam" },
                 { k: "ORR", v: "Connected" },
-                { k: "Clear", v: "Documentation" },
               ].map(s => (
                 <div key={s.v} className="border-l-2 border-gold pl-3">
                   <div className="text-2xl font-display font-semibold text-gold">{s.k}</div>
@@ -82,19 +82,19 @@ function Home() {
         </div>
       </div>
 
-      <Section eyebrow="About Janaharsha" title="Hyderabad's Premier Plotted Development Brand">
+      <Section eyebrow="About RRP Realty" title="Ibrahimpatnam's Most Active Plot Dealer Since 2016">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p><strong className="text-navy">Janaharsha Dream City</strong> is one of the largest plotted development opportunities in Ibrahimpatnam, Hyderabad — featuring multiple approved layout phases across strategic growth corridors.</p>
-            <p>With Hyderabad's relentless expansion towards the eastern corridor, Ibrahimpatnam has emerged as the most sought-after investment destination — anchored by the Outer Ring Road, Pharma City, Adibatla IT hub and TCS campuses.</p>
-            <p>Each Janaharsha phase is master-planned with wide internal roads, residential zoning and clear documentation — giving you a future-proof asset, whether you build your dream home or hold for appreciation.</p>
+            <p><strong className="text-navy">RRP Realty</strong> is an independent Hyderabad real estate firm specialising in the buying, selling and resale of plots within the <strong className="text-navy">Janaharsha venture</strong> in Ibrahimpatnam. The Janaharsha layouts are developed by the Janaharsha group — we are the on-ground sales and resale partner buyers trust.</p>
+            <p>Since 2016, we've transacted over <strong className="text-navy">4,00,000 sq yards</strong> of plotted inventory across this corridor — helping families build homes, investors accumulate land, and existing owners exit at fair, current market rates.</p>
+            <p>With Hyderabad expanding aggressively eastward — anchored by the ORR, Pharma City, Adibatla IT hub and TCS campuses — Ibrahimpatnam is the city's most actively appreciating land market. We help you transact in it the right way.</p>
             <div className="pt-2"><Link to="/about-rrp-realty" className="inline-flex items-center gap-2 text-navy font-semibold hover:text-gold">Read our story <ArrowRight className="h-4 w-4" /></Link></div>
           </div>
           <div className="relative">
             <img src={growthImg} alt="Hyderabad eastern growth corridor infrastructure" width={1280} height={800} loading="lazy" className="rounded-2xl shadow-[var(--shadow-luxe)] w-full h-auto" />
-            <div className="absolute -bottom-6 -left-6 bg-gold text-gold-foreground p-5 rounded-xl max-w-[220px] shadow-[var(--shadow-gold)] hidden md:block">
-              <div className="text-3xl font-display font-bold">13</div>
-              <div className="text-xs uppercase tracking-wider font-semibold">Active Layout Phases</div>
+            <div className="absolute -bottom-6 -left-6 bg-gold text-gold-foreground p-5 rounded-xl max-w-[240px] shadow-[var(--shadow-gold)] hidden md:block">
+              <div className="text-3xl font-display font-bold">4,00,000+</div>
+              <div className="text-xs uppercase tracking-wider font-semibold">Sq Yards Sold Since 2016</div>
             </div>
           </div>
         </div>
@@ -163,19 +163,19 @@ function Home() {
         </div>
       </Section>
 
-      <Section eyebrow="Buy & Sell" title="We Don't Just Sell Plots — We Buy Them Back Too" subtitle="Janaharsha Plots, operated by RRP Realty, runs an active resale and buyback desk for plot owners across the Ibrahimpatnam corridor.">
+      <Section eyebrow="Buy & Resell" title="We Sell New Plots — And Buy Resale Plots Too" subtitle="RRP Realty runs an active buy-and-resell desk for plots across the Janaharsha venture and the wider Ibrahimpatnam corridor.">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white border border-border rounded-2xl p-7">
             <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Buyers</span>
-            <h3 className="font-display font-semibold text-2xl text-navy mt-2">Buy a new plot</h3>
-            <p className="text-muted-foreground mt-3 leading-relaxed">Choose from 13+ master-planned Janaharsha Dream City phases across Ibrahimpatnam — wide roads, residential zoning and transparent documentation.</p>
+            <h3 className="font-display font-semibold text-2xl text-navy mt-2">Buy a plot in Janaharsha</h3>
+            <p className="text-muted-foreground mt-3 leading-relaxed">Choose from 13+ Janaharsha venture phases across Ibrahimpatnam — wide roads, residential zoning and full documentation walkthrough before you buy.</p>
             <Link to="/layout-downloads" className="mt-5 inline-flex items-center gap-2 btn-gold btn-gold-hover">Browse Layouts <ArrowRight className="h-4 w-4" /></Link>
           </div>
           <div className="bg-navy text-white rounded-2xl p-7 border border-gold/40">
             <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Sellers</span>
-            <h3 className="font-display font-semibold text-2xl mt-2">Sell or resell your plot</h3>
-            <p className="text-white/80 mt-3 leading-relaxed">Already own a plot — from us or elsewhere in Ibrahimpatnam? Our acquisitions desk offers fair valuation and clean, fast settlement through RRP Realty's legal team.</p>
-            <Link to="/sell-your-plot-ibrahimpatnam" className="mt-5 inline-flex items-center gap-2 btn-gold btn-gold-hover">Get a Buyback Quote <ArrowRight className="h-4 w-4" /></Link>
+            <h3 className="font-display font-semibold text-2xl mt-2">Resell your existing plot</h3>
+            <p className="text-white/80 mt-3 leading-relaxed">Already own a plot in Janaharsha or anywhere in Ibrahimpatnam? Our acquisitions desk offers fair, current-market valuation and clean, fast settlement.</p>
+            <Link to="/sell-your-plot-ibrahimpatnam" className="mt-5 inline-flex items-center gap-2 btn-gold btn-gold-hover">Get a Resale Quote <ArrowRight className="h-4 w-4" /></Link>
           </div>
         </div>
       </Section>

@@ -4,14 +4,15 @@ import { PageHero } from "@/components/site/PageHero";
 import { Section } from "@/components/site/Section";
 import { LeadForm } from "@/components/site/LeadForm";
 import { Award, Building, Users, Target } from "lucide-react";
+import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/about-rrp-realty")({
   head: () => ({
     meta: [
-      { title: "About RRP Realty — Janaharsha Plots Hyderabad" },
-      { name: "description", content: "RRP Realty operates Janaharsha Plots — premium plotted developments across Ibrahimpatnam, Hyderabad." },
-      { property: "og:title", content: "About RRP Realty — Janaharsha Plots" },
-      { property: "og:description", content: "Trusted plotted development operator in Hyderabad." },
+      { title: "About RRP Realty — Independent Plot Dealer, Ibrahimpatnam" },
+      { name: "description", content: "RRP Realty is an independent Hyderabad real estate firm dealing in plots across the Janaharsha venture, Ibrahimpatnam. 4,00,000+ sq yards sold since 2016." },
+      { property: "og:title", content: "About RRP Realty — Janaharsha Plot Dealer" },
+      { property: "og:description", content: "Independent realty firm. 4 lakh+ sq yards transacted in Ibrahimpatnam since 2016." },
       { property: "og:url", content: "/about-rrp-realty" },
     ],
     links: [{ rel: "canonical", href: "/about-rrp-realty" }],
@@ -25,26 +26,28 @@ function About() {
       <PageHero
         eyebrow="Our Story"
         title="About RRP Realty"
-        subtitle="The team behind Janaharsha Plots — building one of Hyderabad's largest plotted ecosystems."
+        subtitle="An independent real estate firm specialising in the Janaharsha venture and the Ibrahimpatnam plotted market."
       />
       <Section>
         <div className="grid lg:grid-cols-[1.6fr_1fr] gap-10">
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
-            <p className="text-navy font-medium text-lg">RRP Realty is a Hyderabad-based real estate company focused on bringing transparency, planning and brand trust to the plotted development category.</p>
-            <p>Through our flagship initiative — <strong className="text-navy">Janaharsha Dream City</strong> — we have curated a portfolio of 13+ layout phases spanning the most promising villages across Ibrahimpatnam.</p>
-            <p>Our approach is simple: choose strategic locations, plan with discipline, document transparently and stand behind every plot we sell. That's how we've built trust with thousands of investors and home-builders.</p>
-            <h3 className="text-navy font-display text-2xl pt-4">What we stand for</h3>
+            <p className="text-navy font-medium text-lg">RRP Realty is a Hyderabad-based, independent real estate firm. We are not the developers of the Janaharsha venture — we are the on-ground sales and resale partner that buyers and sellers in the Ibrahimpatnam corridor have trusted since 2016.</p>
+            <p>Over the last decade, we have transacted more than <strong className="text-navy">{SITE.sqYardsSold} sq yards</strong> of plotted inventory across Ibrahimpatnam — primarily within the Janaharsha venture phases, plus select resale plots from existing owners.</p>
+            <p>Our edge is simple: deep, single-market focus. We know every Janaharsha phase, every village boundary, every approval status and every realistic resale rate in this corridor. That's why families, NRIs and long-horizon investors come to us — first to buy, and years later to resell.</p>
+            <h3 className="text-navy font-display text-2xl pt-4">What we do</h3>
             <ul className="space-y-2">
-              <li>• <strong className="text-navy">Transparency</strong> — every document, every detail, shared upfront.</li>
-              <li>• <strong className="text-navy">Long-term value</strong> — we invest in locations that compound over decades.</li>
-              <li>• <strong className="text-navy">Service</strong> — guidance from first call to registration and beyond.</li>
+              <li>• <strong className="text-navy">Sell plots</strong> in active Janaharsha venture phases.</li>
+              <li>• <strong className="text-navy">Buy back / resell plots</strong> for existing owners at fair, current-market rates.</li>
+              <li>• <strong className="text-navy">Document walkthroughs</strong> — every approval, parent document and encumbrance, shared upfront.</li>
+              <li>• <strong className="text-navy">Site visits & guidance</strong> — from first call to registration.</li>
             </ul>
+            <p className="pt-2 text-sm italic">Disclaimer: Janaharsha and Janaharsha Dream City are ventures developed by the Janaharsha group. RRP Realty is an independent real estate firm authorised to deal in plots within these layouts. We do not claim ownership of the venture brand.</p>
             <div className="grid sm:grid-cols-2 gap-4 not-prose pt-4">
               {[
-                { Icon: Building, t: "13+ Active Phases" },
-                { Icon: Users, t: "Thousands of investors" },
-                { Icon: Target, t: "Single-market focus" },
-                { Icon: Award, t: "Brand-led ownership" },
+                { Icon: Building, t: "4,00,000+ Sq Yards Sold" },
+                { Icon: Users, t: "Since 2016 in Ibrahimpatnam" },
+                { Icon: Target, t: "Single-market specialists" },
+                { Icon: Award, t: "Buy + Resale desk" },
               ].map(({ Icon, t }) => (
                 <div key={t} className="bg-secondary rounded-xl p-4 flex items-center gap-3 border border-border">
                   <Icon className="h-6 w-6 text-gold" />

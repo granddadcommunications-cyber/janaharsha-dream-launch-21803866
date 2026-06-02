@@ -5,10 +5,13 @@ export const SITE = {
   phoneTel: "+919010341194",
   whatsapp: "919010341194",
   operator: "RRP Realty",
-  tagline: "Own Land in Hyderabad's Fastest Growing Investment Corridor",
+  tagline: "Trusted Plot Dealer for Janaharsha Venture, Ibrahimpatnam",
+  // Track record
+  sqYardsSold: "4,00,000+",
+  since: 2016,
 };
 
-export const waLink = (msg = "Hi, I'm interested in Janaharsha Plots. Please share details.") =>
+export const waLink = (msg = "Hi, I'm interested in plots in the Janaharsha venture, Ibrahimpatnam. Please share details.") =>
   `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
 
 export const PHASES = [
@@ -29,9 +32,9 @@ export const FEATURED_LAYOUTS = [
 export const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "Layouts", to: "/layout-downloads" },
-  { label: "Dream City", to: "/janaharsha-dream-city" },
+  { label: "Janaharsha Venture", to: "/janaharsha-dream-city" },
   { label: "Investment", to: "/investment-plots-hyderabad" },
   { label: "Sell / Resale", to: "/sell-your-plot-ibrahimpatnam" },
-  { label: "About", to: "/about-rrp-realty" },
+  { label: "About RRP", to: "/about-rrp-realty" },
   { label: "Contact", to: "/contact" },
 ];
