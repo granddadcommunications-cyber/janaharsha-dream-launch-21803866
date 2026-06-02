@@ -35,9 +35,10 @@ export function FAQ({ items, title = "Frequently Asked Questions" }: { items: Fa
 }
 
 export const DEFAULT_FAQS: FaqItem[] = [
-  { q: "Are Janaharsha layouts approved?", a: "Our layouts follow proper documentation. We recommend verifying approvals directly with our team during your site visit — all paperwork is shared transparently." },
+  { q: "Who operates Janaharsha Plots?", a: "Janaharsha Plots is owned and operated by RRP Realty, a Hyderabad-based real estate developer with a focus on plotted developments across the Ibrahimpatnam corridor." },
+  { q: "Do you only sell plots, or also buy them back?", a: "Both. We sell new plots across Janaharsha Dream City phases and we also buy back previously sold plots — including plots originally purchased from us and eligible resale plots elsewhere in the Ibrahimpatnam belt." },
+  { q: "Are Janaharsha layouts properly documented?", a: "Yes. Each phase follows proper documentation and approvals. We share complete paperwork transparently during your site visit so you can verify everything before purchase." },
   { q: "How far is Ibrahimpatnam from Hyderabad?", a: "Ibrahimpatnam is approximately 30–40 km from central Hyderabad, well-connected via the Outer Ring Road and major arterial routes." },
-  { q: "Why invest in plotted developments?", a: "Plotted land typically appreciates faster than apartments in growth corridors, offers full ownership of the asset, and gives you flexibility to build, hold or resell." },
   { q: "Can I schedule a site visit?", a: "Yes. Click 'Book Site Visit' anywhere on the site or call 9010341194. We arrange convenient slots including weekends." },
   { q: "Are bank loans available?", a: "Loan availability depends on the layout, your eligibility and the bank's policy. Our team can guide you to partner banks offering plot loans." },
   { q: "How do I download layouts?", a: "Visit our Layout Downloads page and request the specific phase. We send the layout PDF via WhatsApp or email instantly." },

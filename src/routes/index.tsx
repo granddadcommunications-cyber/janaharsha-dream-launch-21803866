@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Janaharsha Plots — Premium Plots in Ibrahimpatnam, Hyderabad" },
-      { name: "description", content: "Own residential & HMDA plots in Janaharsha Dream City, Ibrahimpatnam. Multiple phases, wide roads, ORR access. Book site visit: 9010341194." },
+      { name: "description", content: "Own residential plots in Janaharsha Dream City, Ibrahimpatnam — by RRP Realty. We also buy back previously sold plots. Multiple phases, ORR access. Call 9010341194." },
       { property: "og:title", content: "Janaharsha Plots — Plots in Ibrahimpatnam, Hyderabad" },
       { property: "og:description", content: "Multiple approved layout phases across Hyderabad's fastest growing investment corridor." },
       { property: "og:url", content: "/" },
@@ -36,12 +36,12 @@ function Home() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="container-luxe relative grid lg:grid-cols-[1.4fr_1fr] gap-12 items-center py-20 md:py-28">
           <div>
-            <p className="eyebrow">Janaharsha Dream City • Ibrahimpatnam</p>
+            <p className="eyebrow">Janaharsha Dream City • Ibrahimpatnam • Operated by RRP Realty</p>
             <h1 className="mt-4 text-4xl md:text-6xl font-semibold leading-[1.05] tracking-tight">
-              Own Land in Hyderabad's <span className="text-gold">Fastest Growing</span> Investment Corridor
+              Buy, Sell or Resell Land in Hyderabad's <span className="text-gold">Fastest Growing</span> Investment Corridor
             </h1>
             <p className="mt-6 text-lg text-white/80 max-w-xl leading-relaxed">
-              Explore Janaharsha Dream City layouts across Ibrahimpatnam — strategic connectivity, wide roads, residential zoning and long-term appreciation potential.
+              Janaharsha Dream City, by <span className="text-gold font-medium">RRP Realty</span>, offers premium plots across Ibrahimpatnam — and we also buy back previously sold plots from existing owners.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/site-visit-booking" className="btn-gold btn-gold-hover">Book Site Visit <ArrowRight className="h-4 w-4" /></Link>
@@ -162,6 +162,25 @@ function Home() {
           ))}
         </div>
       </Section>
+
+      <Section eyebrow="Buy & Sell" title="We Don't Just Sell Plots — We Buy Them Back Too" subtitle="Janaharsha Plots, operated by RRP Realty, runs an active resale and buyback desk for plot owners across the Ibrahimpatnam corridor.">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white border border-border rounded-2xl p-7">
+            <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Buyers</span>
+            <h3 className="font-display font-semibold text-2xl text-navy mt-2">Buy a new plot</h3>
+            <p className="text-muted-foreground mt-3 leading-relaxed">Choose from 13+ master-planned Janaharsha Dream City phases across Ibrahimpatnam — wide roads, residential zoning and transparent documentation.</p>
+            <Link to="/layout-downloads" className="mt-5 inline-flex items-center gap-2 btn-gold btn-gold-hover">Browse Layouts <ArrowRight className="h-4 w-4" /></Link>
+          </div>
+          <div className="bg-navy text-white rounded-2xl p-7 border border-gold/40">
+            <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Sellers</span>
+            <h3 className="font-display font-semibold text-2xl mt-2">Sell or resell your plot</h3>
+            <p className="text-white/80 mt-3 leading-relaxed">Already own a plot — from us or elsewhere in Ibrahimpatnam? Our acquisitions desk offers fair valuation and clean, fast settlement through RRP Realty's legal team.</p>
+            <Link to="/sell-your-plot-ibrahimpatnam" className="mt-5 inline-flex items-center gap-2 btn-gold btn-gold-hover">Get a Buyback Quote <ArrowRight className="h-4 w-4" /></Link>
+          </div>
+        </div>
+      </Section>
+
+
 
       <Section eyebrow="Location" title="Strategic Connectivity">
         <div className="grid lg:grid-cols-2 gap-8 items-stretch">

@@ -37,7 +37,7 @@ export function Footer() {
           <ul className="space-y-2 text-sm text-white/80">
             <li><Link to="/plots-in-ibrahimpatnam" className="hover:text-gold">Plots in Ibrahimpatnam</Link></li>
             <li><Link to="/open-plots-near-hyderabad" className="hover:text-gold">Open Plots Near Hyderabad</Link></li>
-            <li><Link to="/hmda-plots-ibrahimpatnam" className="hover:text-gold">HMDA Plots</Link></li>
+            <li><Link to="/sell-your-plot-ibrahimpatnam" className="hover:text-gold">Sell / Resale Your Plot</Link></li>
             <li><Link to="/residential-plots-hyderabad" className="hover:text-gold">Residential Plots</Link></li>
             <li><Link to="/janaharsha-dream-city" className="hover:text-gold">Dream City</Link></li>
             <li><Link to="/site-visit-booking" className="hover:text-gold">Site Visit</Link></li>
