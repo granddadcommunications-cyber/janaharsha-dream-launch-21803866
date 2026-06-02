@@ -15,13 +15,39 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Janaharsha Plots in Ibrahimpatnam, Hyderabad | RRP Realty" },
-      { name: "description", content: "Buy & resell plots in the Janaharsha venture, Ibrahimpatnam. RRP Realty has sold 4,00,000+ sq yards since 2016. 13+ phases. Call 9010341194." },
-      { property: "og:title", content: "Janaharsha Plots, Ibrahimpatnam — by RRP Realty" },
-      { property: "og:description", content: "Independent plot dealer for the Janaharsha venture. 4 lakh+ sq yards sold across Ibrahimpatnam since 2016." },
-      { property: "og:url", content: "/" },
+      { title: "Janaharsha Plots in Ibrahimpatnam, Hyderabad | Buy & Resell — RRP Realty" },
+      { name: "description", content: "Janaharsha plots in Ibrahimpatnam, Hyderabad. Buy or resell open / residential plots across 13+ phases of the Janaharsha venture with RRP Realty — 4,00,000+ sq yards sold since 2016. Call 9010341194." },
+      { name: "keywords", content: "Janaharsha, Janaharsha plots, Janaharsha venture, Janaharsha Ibrahimpatnam, Janaharsha Dream City, plots in Ibrahimpatnam, Ibrahimpatnam plots, open plots Ibrahimpatnam, residential plots Hyderabad, plots near ORR, plots near Pharma City, plots near Adibatla, RRP Realty Ibrahimpatnam" },
+      { property: "og:title", content: "Janaharsha Plots, Ibrahimpatnam — Buy & Resell | RRP Realty" },
+      { property: "og:description", content: "Independent plot dealer for the Janaharsha venture in Ibrahimpatnam. 4,00,000+ sq yards sold since 2016 across 13+ phases." },
+      { property: "og:url", content: "https://janaharsha-dream-launch.lovable.app/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://janaharsha-dream-launch.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "Who is RRP Realty in Ibrahimpatnam?", acceptedAnswer: { "@type": "Answer", text: "RRP Realty is an independent Hyderabad real estate firm dealing in plots across the Janaharsha venture, Ibrahimpatnam. We have sold 4,00,000+ sq yards in this corridor since 2016." } },
+            { "@type": "Question", name: "Where is the Janaharsha venture located?", acceptedAnswer: { "@type": "Answer", text: "The Janaharsha venture is a plotted development across multiple phases in and around Ibrahimpatnam, Hyderabad — covering villages like Mangalpally, Yacharam, Kandukur, Tukkuguda and Maheshwaram, with direct ORR connectivity." } },
+            { "@type": "Question", name: "Do you buy back plots in Ibrahimpatnam?", acceptedAnswer: { "@type": "Answer", text: "Yes. RRP Realty runs an active resale desk and buys back previously sold plots in the Janaharsha venture and across Ibrahimpatnam at fair, current market rates." } },
+            { "@type": "Question", name: "How many phases does Janaharsha have?", acceptedAnswer: { "@type": "Answer", text: "There are 13+ Janaharsha layout phases across the Ibrahimpatnam corridor, with wide internal roads, residential zoning and full documentation." } },
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://janaharsha-dream-launch.lovable.app/" },
+          ],
+        }),
+      },
+    ],
   }),
   component: Home,
 });
