@@ -36,12 +36,12 @@ function Home() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="container-luxe relative grid lg:grid-cols-[1.4fr_1fr] gap-12 items-center py-20 md:py-28">
           <div>
-            <p className="eyebrow">Janaharsha Dream City • Ibrahimpatnam</p>
+            <p className="eyebrow">Janaharsha Dream City • Ibrahimpatnam • Operated by RRP Realty</p>
             <h1 className="mt-4 text-4xl md:text-6xl font-semibold leading-[1.05] tracking-tight">
-              Own Land in Hyderabad's <span className="text-gold">Fastest Growing</span> Investment Corridor
+              Buy, Sell or Resell Land in Hyderabad's <span className="text-gold">Fastest Growing</span> Investment Corridor
             </h1>
             <p className="mt-6 text-lg text-white/80 max-w-xl leading-relaxed">
-              Explore Janaharsha Dream City layouts across Ibrahimpatnam — strategic connectivity, wide roads, residential zoning and long-term appreciation potential.
+              Janaharsha Dream City, by <span className="text-gold font-medium">RRP Realty</span>, offers premium plots across Ibrahimpatnam — and we also buy back previously sold plots from existing owners.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/site-visit-booking" className="btn-gold btn-gold-hover">Book Site Visit <ArrowRight className="h-4 w-4" /></Link>
