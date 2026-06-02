@@ -29,7 +29,7 @@ export function LeadForm({ title = "Get Layout & Pricing", subtitle = "Share you
     setTimeout(() => { setLoading(false); toast.success("Opening WhatsApp with your details…"); }, 500);
   };
 
-  const fieldCls = "h-11 px-4 rounded-lg border border-input bg-background text-sm text-navy placeholder:text-muted-foreground/70 focus:outline-none focus:ring-2 focus:ring-gold";
+  const fieldCls = "h-11 px-4 rounded-lg border border-input bg-background text-sm text-navy placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-gold";
   const labelCls = "text-xs font-semibold text-navy uppercase tracking-wider";
 
   return (
