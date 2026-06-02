@@ -189,7 +189,7 @@ function Home() {
         </div>
       </Section>
 
-      <Section eyebrow="Buy & Resell" title="We Sell New Plots — And Buy Resale Plots Too" subtitle="RRP Realty runs an active buy-and-resell desk for plots across the Janaharsha venture and the wider Ibrahimpatnam corridor.">
+      <Section eyebrow="Sell & Resell" title="We Sell New Plots — And Help You Resell Existing Ones" subtitle="RRP Realty runs an active resale desk for plots across the Janaharsha venture and the wider Ibrahimpatnam corridor.">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white border border-border rounded-2xl p-7">
             <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Buyers</span>
@@ -200,7 +200,7 @@ function Home() {
           <div className="bg-navy text-white rounded-2xl p-7 border border-gold/40">
             <span className="text-xs uppercase tracking-wider text-gold font-semibold">For Sellers</span>
             <h3 className="font-display font-semibold text-2xl mt-2">Resell your existing plot</h3>
-            <p className="text-white/80 mt-3 leading-relaxed">Already own a plot in Janaharsha or anywhere in Ibrahimpatnam? Our acquisitions desk offers fair, current-market valuation and clean, fast settlement.</p>
+            <p className="text-white/80 mt-3 leading-relaxed">Already own a plot in Janaharsha or anywhere in Ibrahimpatnam? Our resale desk handles fair, current-market valuation, buyer matching and clean, fast settlement.</p>
             <Link to="/sell-your-plot-ibrahimpatnam" className="mt-5 inline-flex items-center gap-2 btn-gold btn-gold-hover">Get a Resale Quote <ArrowRight className="h-4 w-4" /></Link>
           </div>
         </div>
